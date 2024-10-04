@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* main part */
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/k1.jpg");
+  background-position: center;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: transparent;
+}
+
+.doska {
+  width: 33.31%;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* additional part */
+
+#scope {
+  width: 400px;
+  height: 500px;
+  transform: scale(.8);
+  transition: all .5s;
+  box-shadow: 0 0 35px rgb(255, 238, 0);
+  /* background:radial-gradient(orangered,black); */
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#scope:hover {
+ cursor: pointer;
+ transform:scale(.84); 
+}
+
+.txt {
+  font-size: 20rem;
+  font-weight: 500;
+  color: white;
+  user-select: none;
+}
+.txt1 {
+  font-size: 20rem;
+  font-weight: 500;
+  color: white;
+  user-select: none;
+}
+.txt2 {
+  font-size: 20rem;
+  font-weight: 500;
+  color: white;
+  user-select: none;
+}
+
+#note{
+  width: 20rem;
+  height: 35px;
+  font-size: 22px;
+  color: black;
+  text-shadow: 0 0 10px rgb(214, 18, 18), 0 0 35px rgb(17, 17, 17);
+  font-weight: 600;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  /* transition: all 5s; */
+  position:absolute;
+  top: 10vh;
+  /* bottom: 0; */
+}
