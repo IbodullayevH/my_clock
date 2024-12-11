@@ -9,7 +9,7 @@ const txtColor2 = document.querySelector(`.txt2`);
 const note = document.querySelector(`#note`);
 
 ///////// Style ////////////
-let d = 0;
+let d = 1;
 let rgbA = Math.floor(Math.random() * 255);
 let rgbB = Math.floor(Math.random() * 255);
 let rgbC = Math.floor(Math.random() * 255);
@@ -30,12 +30,14 @@ const timeI = setInterval(() => {
   }
   ////////////
   if (new Date().getSeconds() == 0) {
-    if (d < 6) {
+    if (d < 7) {
       d++;
       main.style.transition = `all .8s`;
-      main.style.backgroundImage = `url("./images/k5.jpg")`;
+      main.style.backgroundImage = `url("./images/k${d}.jpg")`;     
+      console.log(`url("./images/k${d}.jpg")`);
+       
     } else {
-      d -= 6;
+      d -= 7;
     }
   }
 
